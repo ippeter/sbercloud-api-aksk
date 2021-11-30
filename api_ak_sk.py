@@ -4,13 +4,9 @@ from typing import TYPE_CHECKING
 from apig_sdk import signer
 
 import requests
-import warnings
 import argparse
 import json
 import pprint
-
-
-warnings.filterwarnings('ignore')
 
 
 def call_wrapper(access_key, secret_key, method, uri, xdomainid, request_content_file):
