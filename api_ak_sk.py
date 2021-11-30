@@ -68,7 +68,7 @@ def call_wrapper(access_key, secret_key, method, uri, xdomainid, request_content
 
 if __name__ == "__main__":
     # If executed from CLI, parse arguments    
-    parser = argparse.ArgumentParser(description='Makes SberCloud Advanced API call signed by AK and SK.')
+    parser = argparse.ArgumentParser(description='Makes SberCloud.Advanced API call signed by AK and SK.')
     parser.add_argument("--uri", help="URI for the call. Includes cloud service endpoint and URI. May include Project ID for some calls", required=True)
     parser.add_argument("--method", help="REST method, see API description for your cloud service", required=True)
     #parser.add_argument("--project", help="Project ID, you can find it in the management console", required=True)
