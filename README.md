@@ -8,7 +8,7 @@ This script is a courtesy of @sadpdtchr
 Sometimes there is a need to manuall call SberCloud.Advanced API of a certain cloud service.  
 According to the [documentation](https://support.hc.sbercloud.ru/api/ecs/en-us_topic_0124306062.html), a request can be authenticated either by a temporary security token or by Access Key and Secret Key (AK/SK).  
 This script implements the second option: it signs the request with AK/SK.
-It uses the standard Python SDK for that available [here](https://support.huaweicloud.com/intl/en-us/devg-apig/apig-dev-180307016.html).  
+It uses the standard Python SDK for that available [here](https://support.hc.sbercloud.ru/devg/apisign/api-sign-sdk-python.html).  
 
 ## Usage 
 
@@ -59,11 +59,11 @@ The script requires python3 with the following modules:
 - argparse
 - json
 - pprint
-- apig_sdk (you get this one from [here](https://support.huaweicloud.com/intl/en-us/devg-apig/apig-dev-180307016.html))
+- apig_sdk (you get this one from [here](https://support.hc.sbercloud.ru/devg/apisign/api-sign-sdk-python.html))
 
 ## Installation
 
-Just clone the repo. Install [apig_sdk](https://support.huaweicloud.com/intl/en-us/devg-apig/apig-dev-180307016.html). Then execute the script as shown earlier:
+Just clone the repo. Install [apig_sdk](https://support.hc.sbercloud.ru/devg/apisign/api-sign-sdk-python.html). Then execute the script as shown earlier:
 
 $ python3 api_ak_sk.py -h
 
