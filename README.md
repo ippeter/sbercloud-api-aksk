@@ -69,5 +69,5 @@ $ python3 api_ak_sk.py -h
 
 Or, you could make it executable:
 
-$ chmod u+x api_ak_sk. 
+$ chmod u+x api_ak_sk  
 $ ./api_ak_sk -h
