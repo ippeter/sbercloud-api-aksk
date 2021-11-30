@@ -44,6 +44,13 @@ Here you need to provide the request body, which will describe your ECS:
 
 $ python3 api_ak_sk.py --ak **Your_AK_here** --sk **Your_SK_here** --method POST --uri https://ecs.ru-moscow-1.hc.sbercloud.ru/v1/<b>Your_Project_ID_here</b>/cloudservers --content ecs.json
 
+#### Example 3: POST call to create new custom IAM policy
+
+This very call (as well as some other IAM-related calls) requires you to provide the domain id of your root account, even if you execute this call from under the root account itself.  
+Thus you must add the xdomainid parameter:
+
+$ python3 api_ak_sk.py --ak **Your_AK_here** --sk **Your_SK_here** --method POST --uri https://iam.ru-moscow-1.hc.sbercloud.ru/v3.0/OS-ROLE/roles --content policy.json --xdomainid **Your_Domain_ID_here**
+
 ### Dependencies
 
 ### Installation
