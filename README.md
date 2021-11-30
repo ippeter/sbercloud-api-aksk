@@ -70,4 +70,4 @@ $ python3 api_ak_sk.py -h
 Or, you could make it executable:
 
 $ chmod u+x api_ak_sk.py  
-$ ./api_ak_sk -h
+$ ./api_ak_sk.py -h
