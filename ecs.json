@@ -1,0 +1,26 @@
+{
+    "server": {
+        "availability_zone":"ru-moscow-1a",
+        "name": "for-sergey",
+        "imageRef": "649a6095-b042-4a4c-bb37-f4670cb472a3",
+        "root_volume": {
+            "volumetype": "SSD",
+            "size": 16
+        },
+        "data_volumes": [ ],
+        "flavorRef": "s6.xlarge.2",
+        "vpcid": "Your_VPC_id_here",
+        "security_groups": [
+            {
+                "id": "Your_security_group_id_here"
+            }
+        ],
+        "nics": [
+            {
+                "subnet_id": "Network_ID_of_your_subnet_here"
+            }
+        ],
+        "key_name": "Name_of_your_key_pair_here",
+        "count": 1
+    }
+}
