@@ -63,7 +63,7 @@ The script requires python3 with the following modules:
 
 ## Installation
 
-Just clone the repo. Then execute the script as shown earlier:
+Just clone the repo. Install [apig_sdk](https://support.huaweicloud.com/intl/en-us/devg-apig/apig-dev-180307016.html). Then execute the script as shown earlier:
 
 $ python3 api_ak_sk.py -h
 
