@@ -1,0 +1,29 @@
+{
+   "role": {
+        "display_name": "Script Test",
+        "type": "XA",
+        "description": "Script Test",
+        "description_cn": "Testing the script",
+        "policy": {
+            "Version": "1.1",
+            "Statement": [
+		{
+		    "Action": [
+                			"das:*:*",
+                			"das:connections:modify",
+                			"ecs:cloudServers:list",
+                			"rds:instance:list",
+                			"dds:instance:list",
+                			"taurus:instance:list",
+                			"nosql:instance:list",
+                			"gaussdb:instance:list",
+                			"ddm:instance:list",
+                			"ddm:instance:get",
+                			"das:connections:login"
+            			],
+            			"Effect": "Allow"
+        		}
+    		]
+	}
+	}
+}
