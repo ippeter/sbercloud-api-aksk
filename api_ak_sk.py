@@ -57,7 +57,11 @@ def call_wrapper(access_key, secret_key, method, uri, xdomainid, request_content
     # Execute request and print results
     resp = requests.request(r.method, r.scheme + "://" + r.host + r.uri, headers=r.headers, data=r.body)
     print(resp.status_code)
-    pprint.pprint(resp.json())
+    resp.close()
+    print(json.dumps(resp.json()))
+    
+    ### pprint output have is not valid json format 
+    #pprint.pprint(resp.json())
 
     return True
 
