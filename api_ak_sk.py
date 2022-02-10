@@ -6,7 +6,6 @@ from apig_sdk import signer
 import requests
 import argparse
 import json
-import pprint
 
 
 def call_wrapper(access_key, secret_key, method, uri, xdomainid, request_content_file):
@@ -59,9 +58,6 @@ def call_wrapper(access_key, secret_key, method, uri, xdomainid, request_content
     print(resp.status_code)
     resp.close()
     print(json.dumps(resp.json()))
-    
-    ### pprint output have is not valid json format 
-    #pprint.pprint(resp.json())
 
     return True
 
